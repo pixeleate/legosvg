@@ -1,0 +1,13 @@
+<svg>
+<filter id="drop-shadow">
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
+<feOffset dx="1" dy="2" result="offsetblur"/>
+<feFlood flood-color="rgba(0,0,0,0.5)"/>
+<feComposite in2="offsetblur" operator="in"/>
+<feMerge>
+<feMergeNode/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+  <circle cx="20" cy="20" r="15" style="fill:yellow" filter="url(#drop-shadow)"/>
+</svg>
